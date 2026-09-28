@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_blank" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-secondary-container": "#247246", "on-error-container": "#93000a", "inverse-surface": "#31312c", "secondary": "#1c6c40", "on-surface-variant": "#59413c", "surface-variant": "#e5e2db", "on-secondary": "#ffffff", "on-primary-fixed": "#3e0500", "primary-container": "#cb492f", "tertiary-container": "#a76600", "outline-variant": "#e0bfb8", "surface-container-low": "#f6f3ec", "on-primary-fixed-variant": "#8b1b05", "error-container": "#ffdad6", "inverse-primary": "#ffb4a4", "secondary-fixed": "#a5f4bc", "surface-container": "#f1eee7", "on-secondary-fixed-variant": "#00522c", "surface-container-lowest": "#ffffff", "tertiary-fixed": "#ffddbb", "error": "#ba1a1a", "surface-container-high": "#ebe8e1", "on-secondary-fixed": "#00210f", "primary-fixed-dim": "#ffb4a4", "surface": "#fcf9f2", "surface-dim": "#dcdad3", "primary": "#a93119", "on-error": "#ffffff", "tertiary-fixed-dim": "#ffb868", "on-background": "#1c1c18", "on-primary-container": "#fffbff", "tertiary": "#855000", "outline": "#8c716b", "secondary-container": "#a5f4bc", "on-tertiary-container": "#fffbff", "primary-fixed": "#ffdad3", "inverse-on-surface": "#f3f0e9", "surface-container-highest": "#e5e2db", "on-tertiary-fixed-variant": "#673d00", "on-tertiary-fixed": "#2b1700", "secondary-fixed-dim": "#8ad7a2", "surface-bright": "#fcf9f2", "on-primary": "#ffffff", "on-surface": "#1c1c18", "background": "#fcf9f2", "on-tertiary": "#ffffff", "surface-tint": "#ac331b" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-xs": "0.375rem", "margin": "1.25rem", "space-md": "1.25rem", "space-sm": "0.75rem", "gutter": "1rem", "margin-desktop": "3rem", "margin-tablet": "2rem", "space-lg": "1.75rem", "space-xl": "2.5rem", "gutter-desktop": "2rem", "gutter-tablet": "1.5rem" }, fontFamily: { "headline-md": ["Inter"], "headline-sm": ["Inter"], "headline-lg": ["Inter"], "label-sm": ["Inter"], "body-sm": ["Inter"], "label-lg": ["Inter"], "display-mobile": ["Inter"], "body-md": ["Inter"], "body-lg": ["Inter"], "label-md": ["Inter"], "headline-lg-mobile": ["Inter"], "display": ["Inter"] }, fontSize: { "headline-md": ["1.5rem", { "lineHeight": "2rem", "letterSpacing": "0em", "fontWeight": "600" }], "headline-sm": ["1.25rem", { "lineHeight": "1.75rem", "letterSpacing": "0em", "fontWeight": "600" }], "headline-lg": ["2rem", { "lineHeight": "2.5rem", "letterSpacing": "-0.01em", "fontWeight": "700" }], "label-sm": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0.03em", "fontWeight": "700" }], "body-sm": ["1rem", { "lineHeight": "1.5rem", "letterSpacing": "0.01em", "fontWeight": "500" }], "label-lg": ["1.125rem", { "lineHeight": "1.5rem", "letterSpacing": "0.01em", "fontWeight": "600" }], "display-mobile": ["2rem", { "lineHeight": "2.5rem", "letterSpacing": "-0.01em", "fontWeight": "700" }], "body-md": ["1.0625rem", { "lineHeight": "1.625rem", "letterSpacing": "0em", "fontWeight": "400" }], "body-lg": ["1.1875rem", { "lineHeight": "1.75rem", "letterSpacing": "0em", "fontWeight": "400" }], "label-md": ["1rem", { "lineHeight": "1.375rem", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-lg-mobile": ["1.625rem", { "lineHeight": "2.125rem", "letterSpacing": "-0.01em", "fontWeight": "700" }], "display": ["2.5rem", { "lineHeight": "3rem", "letterSpacing": "-0.02em", "fontWeight": "700" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style></head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen pt-safe pb-safe"><main class="flex-1 flex flex-col relative w-full bg-surface"><div class="flex flex-col w-full px-margin pb-space-xl gap-space-lg select-none">
+<!-- Top Acoustic Beacon / Sound Wave Logo Header -->
+<div class="flex flex-col items-center justify-center pt-space-md pb-space-xs text-center">
+<div aria-label="6th Sense Acoustic Spatial Radar emblem" class="relative flex items-center justify-center w-28 h-28 rounded-full bg-surface-container-high shadow-sm mb-space-sm" role="img">
+<!-- Radar ring pulses in SVG based on inspiration image -->
+<svg class="w-full h-full p-2 text-primary" fill="none" stroke="currentColor" viewbox="0 0 100 100">
+<circle class="opacity-40 animate-spin" cx="50" cy="50" r="42" stroke-dasharray="8 8" stroke-width="3" style="animation-duration: 20s; transform-origin: center;"></circle>
+<circle class="opacity-75" cx="50" cy="50" r="30" stroke-dasharray="6 6" stroke-width="3.5"></circle>
+<circle class="opacity-90" cx="50" cy="50" fill="currentColor" r="18"></circle>
+<path d="M50 32C43 32 38 37 38 43C38 51 55 52 55 60C55 64 51 68 47 68C43 68 40 65 40 62" stroke="#FFFFFF" stroke-linecap="round" stroke-width="3.5"></path>
+<circle cx="47" cy="55" fill="#FFFFFF" r="2.5"></circle>
+</svg>
+<div class="absolute -bottom-1 bg-secondary-container text-on-secondary-container px-space-xs py-0.5 rounded-full flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">graphic_eq</span>
+<span class="font-label-sm text-label-sm">Audio Ready</span>
+</div>
+</div>
+<div class="inline-flex items-center gap-2 px-space-sm py-1 rounded-full bg-surface-container mb-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-on-surface">Multimodal Sensory Co-Pilot</span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface text-center mb-space-xs tracking-tight">
+      See the world with confidence.
+    </h1>
+<p class="font-body-md text-body-md text-on-surface-variant text-center max-w-sm">
+      6th Sense AI uses multimodal artificial intelligence to understand your surroundings and provide intelligent guidance.
+    </p>
+<!-- Quick Audio Announce Action -->
+<button aria-label="Listen to this screen's introduction" class="mt-space-sm flex items-center gap-2 px-space-md py-space-xs bg-surface-container hover:bg-surface-container-high rounded-full active:scale-95 transition-all text-primary font-label-md text-label-md" id="hearScreenBtn">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">volume_up</span>
+<span>Read this screen aloud</span>
+</button>
+</div>
+<!-- Interactive 4-Stage Sensory Loop -->
+<section aria-labelledby="how-it-works-title" class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<h2 class="font-headline-sm text-headline-sm text-on-surface" id="how-it-works-title">
+        How 6th Sense Operates
+      </h2>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Real-Time</span>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<!-- Step 1: See -->
+<div class="flex flex-col p-space-md bg-surface-container-lowest rounded-xl shadow-sm gap-space-xs">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">photo_camera</span>
+</div>
+<div class="flex items-center gap-1.5 mt-1">
+<span class="font-label-sm text-label-sm text-primary">01</span>
+<span class="font-label-md text-label-md text-on-surface">See</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Ultra-wide camera scans floor, edges, obstacles, and depth contours.
+        </p>
+</div>
+<!-- Step 2: Understand -->
+<div class="flex flex-col p-space-md bg-surface-container-lowest rounded-xl shadow-sm gap-space-xs">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">psychology</span>
+</div>
+<div class="flex items-center gap-1.5 mt-1">
+<span class="font-label-sm text-label-sm text-tertiary">02</span>
+<span class="font-label-md text-label-md text-on-surface">Understand</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Neural network classifies signs, curbs, pedestrian walkways, and hazards.
+        </p>
+</div>
+<!-- Step 3: Speak -->
+<div class="flex flex-col p-space-md bg-surface-container-lowest rounded-xl shadow-sm gap-space-xs">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">record_voice_over</span>
+</div>
+<div class="flex items-center gap-1.5 mt-1">
+<span class="font-label-sm text-label-sm text-secondary">03</span>
+<span class="font-label-md text-label-md text-on-surface">Speak</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Natural spatial voice whispering clear spatial orientation into your ear.
+        </p>
+</div>
+<!-- Step 4: Assist -->
+<div class="flex flex-col p-space-md bg-surface-container-lowest rounded-xl shadow-sm gap-space-xs">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">vibration</span>
+</div>
+<div class="flex items-center gap-1.5 mt-1">
+<span class="font-label-sm text-label-sm text-primary">04</span>
+<span class="font-label-md text-label-md text-on-surface">Assist</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Directional haptic pulses warn of impending stairs, glass, and obstacles.
+        </p>
+</div>
+</div>
+</section>
+<!-- Live Multi-Sensory Environment Preview Card -->
+<section aria-label="Visual scene simulator" class="flex flex-col p-space-md bg-surface-container-lowest rounded-xl shadow-sm gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-xl" style="font-variation-settings: 'FILL' 1;">sensors</span>
+<span class="font-label-md text-label-md text-on-surface">Live Perception Demonstration</span>
+</div>
+<span class="px-space-xs py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm font-bold">Safe Corridor</span>
+</div>
+<div class="relative w-full h-44 rounded-lg overflow-hidden bg-surface-container flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="A warm, bright urban pedestrian sidewalk with tactile paving tiles on a sunny afternoon, photographed in clear high contrast with natural bone and terracotta tones, with safe walking path highlighted in soft amber overlay." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhYQb9f5fzgGCToSqE9GoNl7U4enZ3YJY4Zr7wksPf6l2JrgaU_ykYgalpLmt_VTQRo_af6otKruT8glgQXyyXL9SlebbccSbXsSRdUJfEOmbuhS9AePwGYGM8tAkkM60jyR4owUiji1WL5VdBv9GzCanZp2T8hEi02KfP8QlmDLiTSIoaE8DsSFYVLUIVQnwB01B1_MKE22pUxK5xajKTiMXv4oVXP1I0YzCC4siQwBHlaBu0f6Bvgg"/>
+<!-- Multimodal live bounding target overlay -->
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent flex flex-col justify-end p-space-sm">
+<div class="flex items-center justify-between text-on-primary font-label-sm text-label-sm">
+<span class="flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed animate-ping"></span>
+            Tactile Paving 2m Ahead
+          </span>
+<span class="bg-primary px-2 py-0.5 rounded text-white font-bold">12 O'Clock</span>
+</div>
+</div>
+</div>
+<!-- Audio Earcon & Haptic readout simulation -->
+<div class="flex items-center justify-between px-space-sm py-2 rounded-lg bg-surface-container-low text-on-surface">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-lg">hearing</span>
+<span class="font-body-sm text-body-sm italic">"Clear path for next 8 paces, curb slightly right."</span>
+</div>
+<button aria-label="Replay audio cue" class="p-2 text-primary active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-xl">play_circle</span>
+</button>
+</div>
+</section>
+<!-- Accessibility Sensory Calibration Bar -->
+<section aria-labelledby="calibration-heading" class="flex flex-col p-space-md bg-surface-container rounded-xl gap-space-md shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-2xl" style="font-variation-settings: 'FILL' 1;">tune</span>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface" id="calibration-heading">
+            Sensory Calibration
+          </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Adjust your preferences now; you can fine-tune at any time.</p>
+</div>
+</div>
+</div>
+<!-- Speech Speed Toggle -->
+<div class="flex flex-col gap-1.5">
+<div class="flex justify-between items-center">
+<label class="font-label-md text-label-md text-on-surface flex items-center gap-1.5" for="speed-options">
+<span class="material-symbols-outlined text-lg">speed</span>
+          Speech Narration Speed
+        </label>
+<span class="font-label-sm text-label-sm text-primary font-bold" id="speed-label">1.25x (Brisk)</span>
+</div>
+<div aria-label="Speech Speed" class="grid grid-cols-3 gap-2" id="speed-options" role="radiogroup">
+<button aria-checked="false" class="py-2.5 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md text-center active:bg-primary-fixed focus:outline-none focus:ring-2 focus:ring-primary" role="radio" type="button">1.0x</button>
+<button aria-checked="true" class="py-2.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md text-center shadow-sm" role="radio" type="button">1.25x</button>
+<button aria-checked="false" class="py-2.5 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md text-center active:bg-primary-fixed focus:outline-none focus:ring-2 focus:ring-primary" role="radio" type="button">1.5x</button>
+</div>
+</div>
+<!-- Haptic Feedback Slider -->
+<div class="flex flex-col gap-1.5">
+<div class="flex justify-between items-center">
+<span class="font-label-md text-label-md text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-lg">touch_app</span>
+          Haptic Pulse Feedback
+        </span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Crisp Double</span>
+</div>
+<div aria-label="Haptic strength" class="grid grid-cols-3 gap-2" role="radiogroup">
+<button aria-checked="false" class="py-2.5 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md text-center active:bg-secondary-fixed" role="radio" type="button">Gentle</button>
+<button aria-checked="true" class="py-2.5 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md text-center shadow-sm" role="radio" type="button">Crisp</button>
+<button aria-checked="false" class="py-2.5 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md text-center active:bg-secondary-fixed" role="radio" type="button">Strong</button>
+</div>
+</div>
+<!-- Text Scale & High Contrast Row -->
+<div class="grid grid-cols-2 gap-space-sm pt-space-xs">
+<div class="flex flex-col p-space-sm rounded-lg bg-surface-container-lowest">
+<span class="font-label-sm text-label-sm text-on-surface-variant mb-1">Display Text Scale</span>
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface">Aa+</span>
+<button class="px-space-sm py-1 bg-surface-container text-primary rounded-md font-label-md text-label-md">Large</button>
+</div>
+</div>
+<div class="flex flex-col p-space-sm rounded-lg bg-surface-container-lowest">
+<span class="font-label-sm text-label-sm text-on-surface-variant mb-1">High Contrast Shield</span>
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-primary">contrast</span>
+<div aria-checked="true" class="w-12 h-6 rounded-full bg-primary flex items-center justify-end px-1 cursor-pointer" role="switch">
+<span class="w-4 h-4 rounded-full bg-surface-container-lowest"></span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Essential Plain-Language Permissions -->
+<section aria-labelledby="permissions-heading" class="flex flex-col gap-space-sm">
+<div class="flex flex-col">
+<h2 class="font-headline-sm text-headline-sm text-on-surface" id="permissions-heading">
+        Clear & Respectful Permissions
+      </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Every sensor strictly stays on your device. Never shared or sold.
+      </p>
+</div>
+<div class="flex flex-col gap-space-xs">
+<!-- Camera Permission Item -->
+<div class="flex items-start gap-space-sm p-space-md bg-surface-container-lowest rounded-xl shadow-sm">
+<div class="w-11 h-11 rounded-lg bg-surface-container flex-shrink-0 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-2xl">visibility</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<h3 class="font-label-lg text-label-lg text-on-surface">Continuous Vision (Camera)</h3>
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+            Continuous spatial awareness, curb identification, text sign reading & instant hazard detection.
+          </p>
+</div>
+</div>
+<!-- Microphone Permission Item -->
+<div class="flex items-start gap-space-sm p-space-md bg-surface-container-lowest rounded-xl shadow-sm">
+<div class="w-11 h-11 rounded-lg bg-surface-container flex-shrink-0 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-2xl">mic</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<h3 class="font-label-lg text-label-lg text-on-surface">Voice Co-Pilot (Microphone)</h3>
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+            Natural two-way dialogue: ask "Is this bus the #14?", "Read this pill bottle", or "Describe this room".
+          </p>
+</div>
+</div>
+<!-- Location Permission Item -->
+<div class="flex items-start gap-space-sm p-space-md bg-surface-container-lowest rounded-xl shadow-sm">
+<div class="w-11 h-11 rounded-lg bg-surface-container flex-shrink-0 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-2xl">near_me</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<h3 class="font-label-lg text-label-lg text-on-surface">Outdoor Navigation (Location)</h3>
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+            Precise transit stop tracking, accessible crosswalk discovery, and one-tap emergency contact dispatch.
+          </p>
+</div>
+</div>
+<!-- Notifications & Haptics -->
+<div class="flex items-start gap-space-sm p-space-md bg-surface-container-lowest rounded-xl shadow-sm">
+<div class="w-11 h-11 rounded-lg bg-surface-container flex-shrink-0 flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-2xl">notifications_active</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<h3 class="font-label-lg text-label-lg text-on-surface">Urgent Alert Beacon</h3>
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+            High-priority safety buzz alerts you about sudden step-downs or obstacles even when the screen is locked in pocket.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Reassurance & Human Promise Banner -->
+<div class="flex items-center gap-space-sm p-space-md bg-surface-container-high rounded-xl">
+<div class="w-10 h-10 rounded-full bg-surface flex-shrink-0 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-2xl">volunteer_activism</span>
+</div>
+<div class="flex-1 min-w-0">
+<h3 class="font-label-md text-label-md text-on-surface">Designed with low-vision communities</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Built to give independence, peace of mind, and effortless exploration.</p>
+</div>
+</div>
+<!-- Primary Tactile Interaction & Guided Tour Triggers -->
+<section aria-label="Complete Setup" class="flex flex-col gap-space-sm pt-space-xs">
+<!-- Giant Tactile CTA Button -->
+<button aria-label="Get Started with 6th Sense AI. Double tap to begin sensor stream" class="w-full py-space-md px-space-lg bg-primary hover:bg-primary-container active:scale-[0.98] transition-all rounded-lg text-on-primary font-headline-sm text-headline-sm flex items-center justify-center gap-3 shadow-md focus:outline-none focus:ring-4 focus:ring-primary/40 min-h-[64px]" id="startSetupBtn" type="button">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">power_settings_new</span>
+<span>Get Started (Double-Tap)</span>
+</button>
+<!-- Secondary Audio Guided Tour Button -->
+<button aria-label="Start Audio Guided Tour to hear full instructions" class="w-full py-space-md px-space-lg bg-surface-container-lowest hover:bg-surface-container active:scale-[0.98] transition-all rounded-lg text-on-surface font-label-lg text-label-lg flex items-center justify-center gap-2.5 shadow-sm min-h-[56px] focus:outline-none focus:ring-2 focus:ring-on-surface" id="guidedTourBtn" type="button">
+<span class="material-symbols-outlined text-2xl text-primary">headphones</span>
+<span>Audio Guided Tour (3 min)</span>
+</button>
+</section>
+<!-- Discreet Safety & Version Footnote -->
+<div class="text-center font-label-sm text-label-sm text-on-surface-variant pb-space-sm">
+    6th Sense AI v2.4 · WCAG 2.2 AAA Validated · VoiceOver & TalkBack Ready
+  </div>
+</div>
+<script>
+  // Micro-interaction: Speech & Audio trigger simulation for accessibility
+  const hearBtn = document.getElementById('hearScreenBtn');
+  const startBtn = document.getElementById('startSetupBtn');
+  const tourBtn = document.getElementById('guidedTourBtn');
+
+  function announceMessage(text) {
+    if ('speechSynthesis' in window) {
+      window.speechSynthesis.cancel();
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.rate = 1.15;
+      utterance.pitch = 1.0;
+      window.speechSynthesis.speak(utterance);
+    }
+  }
+
+  if (hearBtn) {
+    hearBtn.addEventListener('click', () => {
+      announceMessage("Welcome to 6th Sense AI. See the world with confidence. Multimodal artificial intelligence is ready to guide your walking path, recognize text, and describe hazards in real time.");
+    });
+  }
+
+  if (startBtn) {
+    let lastTap = 0;
+    startBtn.addEventListener('click', (e) => {
+      const currentTime = new Date().getTime();
+      const tapLength = currentTime - lastTap;
+      if (tapLength < 500 && tapLength > 0) {
+        announceMessage("Sensors calibrated. Activating live spatial guidance now.");
+        startBtn.classList.add('bg-secondary');
+        startBtn.innerHTML = '<span class="material-symbols-outlined text-3xl">check</span><span>Live Perception Active</span>';
+      } else {
+        announceMessage("Double tap to launch live spatial co-pilot.");
+      }
+      lastTap = currentTime;
+    });
+  }
+
+  if (tourBtn) {
+    tourBtn.addEventListener('click', () => {
+      announceMessage("Beginning audio guided sensory tour. Chapter 1: How we map your path.");
+    });
+  }
+</script></main></body></html>
